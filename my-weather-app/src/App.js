@@ -3,8 +3,12 @@ import UilReact from '@iconscout/react-unicons/icons/uil-react';
 import React from 'react';
 // == Local Imports
 import './App.css';
+import Forcast from './components/Forecast';
 import Inputs from './components/Inputs';
+import TemperatureAndDetails from './components/TemperatureAndDetails';
+import TimeAndLocation from './components/TimeAndLocation';
 import TopButtons from './components/TopButtons';
+
 
 // Reuni les different components pour les afficher
 function App() {
@@ -14,6 +18,9 @@ function App() {
     <TopButtons/>
     <Inputs/>
 
+    <TimeAndLocation/>
+    <TemperatureAndDetails/>
+    <Forcast/>
     </div>
 
   );
