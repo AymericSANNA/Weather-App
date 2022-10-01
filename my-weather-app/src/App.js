@@ -3,7 +3,7 @@ import UilReact from '@iconscout/react-unicons/icons/uil-react';
 import React from 'react';
 // == Local Imports
 import './App.css';
-import Forcast from './components/Forecast';
+import Forecast from './components/Forecast';
 import Inputs from './components/Inputs';
 import TemperatureAndDetails from './components/TemperatureAndDetails';
 import TimeAndLocation from './components/TimeAndLocation';
@@ -20,7 +20,9 @@ function App() {
 
     <TimeAndLocation/>
     <TemperatureAndDetails/>
-    <Forcast/>
+
+    <Forecast title="hourly forecast" />
+    <Forecast title="daily forecast" />
     </div>
 
   );

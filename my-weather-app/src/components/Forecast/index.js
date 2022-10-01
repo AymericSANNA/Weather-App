@@ -3,11 +3,11 @@ import React from "react";
 
 // == Component
 // Prediction sur les 5 prochains jours
-function Forcast() {
+function Forecast({title}) {
 	return (
 		<div>
 			<div className="flex items-center justify-start mt-6">
-				<p className=" text-white font-medium uppercase">hourly forecast</p>
+				<p className=" text-white font-medium uppercase">{title}</p>
 			</div>
 			<hr className="my-2" /*Ligne de séparation*//> 
 
@@ -63,4 +63,4 @@ function Forcast() {
 }
 
 // == Export
-export default Forcast;
+export default Forecast;
