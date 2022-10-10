@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 // == Import Externals
 import { UilSearch, UilLocationPoint } from "@iconscout/react-unicons";
-import { toast } from "react-toastify";
 
 // == Import Local
 
@@ -28,7 +27,6 @@ function Inputs({ setQuery, setUnits, units }) {
 	};
 	const handleLocation = () => {
 		navigator.geolocation.getCurrentPosition((position) => {
-			toast.success("Successfully get weather for your current location")
 			let lat = position.coords.latitude;
 			let lon = position.coords.longitude;
 			setQuery({
